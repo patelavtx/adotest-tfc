@@ -181,60 +181,6 @@ variable "region" {
 }
 
 
-# This one to omitted here when not using KV
-variable "spoke_cidrs" {
-    description = "spoke vpc range"
-    type = string
-}
-
-
-variable "gw1_snat" {
-  type        = string
-}
-
-variable "gw2_snat" {
-  type        = string
-}
-
-variable "dnatip" {
-  type        = string
-}
-
-variable "dnatip2" {
-  type        = string
-}
-
-variable "dstcidr" {
-  type        = string
-}
-
-variable "dstcidr2" {
-  type        = string
-}
-
-
-variable "nat_attached" {
-  default     = "true"
-}
-
-
-variable "attached" {
-  default     = "true"
-}
-
-variable "ha_gw" {
-  description = "Required when spoke is HA pair."
-  default     = true
-}
-/*
-variable "tags" {
-  type = map(string)
-  description = ""
-  default = { ProjectName = "spoke-ado4"
-              BusinessOwnerEmail = "apatel@aviatrix.com" 
-            }
-}
-*/
 
 variable "environ" {
     type = string
