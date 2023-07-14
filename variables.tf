@@ -181,11 +181,6 @@ variable "region" {
 }
 
 
-
-variable "environ" {
-    type = string
-}
-
 variable "controller-nsg" {
     type = string
 }
