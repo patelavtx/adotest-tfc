@@ -197,3 +197,7 @@ variable "agent-rg" {
     type = string
 }
 
+variable "attached" {
+    type = string
+}
+
