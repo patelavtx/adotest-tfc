@@ -201,3 +201,6 @@ variable "attached" {
     type = string
 }
 
+variable "ha_gw" {
+    type = string
+}
