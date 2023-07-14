@@ -27,7 +27,7 @@ resource "azuredevops_project" "project" {
 # set environment -  (Which can be then referred to in the yaml file for 'approval/checks' during the stage runs)
 resource "azuredevops_environment" "example" {
   project_id = azuredevops_project.project.id
-  name       = "${local.ado_project_name-var.azdevops_env}"
+  name       = "${local.ado_project_name}"
 }
 
 
