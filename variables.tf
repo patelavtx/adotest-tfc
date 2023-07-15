@@ -113,7 +113,7 @@ locals {
 
   az_resource_group_name  = "${var.prefix}${random_integer.suffix.result}"
   az_storage_account_name = "${lower(var.prefix)}${random_integer.suffix.result}"
-  az_key_vault_name = "${var.prefix}${random_integer.suffix.result}"
+  az_key_vault_name = "kv-project${random_integer.suffix.result}"
 
 # keyvault doesn't like underscore, therefore dashes used. 
   pipeline_variables = {
